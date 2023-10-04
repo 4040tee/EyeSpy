@@ -30,7 +30,6 @@ alarm::alarm(string descript, int pin)
 
 /**
  * Private function to ring the alarm, record the information of the alarm start time.
- * @author Khanh Nguyen, Ian Guenther Green, Tabish Jabir
  * @brief Ring alarm and store data.
  * @param description of the alarm.
  * @return Ring alarm and store data.
@@ -65,7 +64,6 @@ void alarm::privateSetAlarm(string descript){
 
 /**
  * Private function to stop the alarm, record the information of the alarm stop time.
- * @author Khanh Nguyen, Ian Guenther Green, Tabish Jabir
  * @brief Stop alarm and store data.
  * @param none.
  * @return Stop alarm and store data.
@@ -96,7 +94,6 @@ void alarm::privateStopAlarm(){
 
 /**
  * Private function to get the state of the alarm.
- * @author Khanh Nguyen
  * @brief get the state of the alarm.
  * @param none.
  * @return get the state of the alarm.
@@ -107,7 +104,6 @@ bool alarm::privateCheckAlarmState(){
 
 /**
  * Private function to ring the alarm by calling privateRingAlarm.
- * @author Khanh Nguyen, Ian Guenther Green
  * @brief Ring alarm.
  * @param description of the alarm as start ID.
  * @return Ring alarm.
@@ -118,7 +114,6 @@ void alarm::setAlarm(string startID){
 
 /**
  * Public function to stop the alarm by calling privateStopAlarm.
- * @author Khanh Nguyen, Ian Guenther Green
  * @brief Stop alarm
  * @param none.
  * @return Stop alarm .
@@ -129,7 +124,6 @@ void alarm::stopAlarm(){
 
 /**
  * Public function to get the state of the alarm by calling privateCheckAlarmState.
- * @author Khanh Nguyen
  * @brief get the state of the alarm.
  * @param none.
  * @return get the state of the alarm.

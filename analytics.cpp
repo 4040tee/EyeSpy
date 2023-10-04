@@ -19,7 +19,6 @@ Analytics::Analytics() {}
 
 /**
  * Private function to initiate the analytics system, including creating a new database, and table if one does not exist
- * @author Tabish Jabir, Ian Guenther Green
  * @brief initiate the analytics system
  */
 void Analytics::privateInitialize(){
@@ -51,7 +50,6 @@ void Analytics::privateInitialize(){
 
 /**
  * Store a new record, or update an existing record in the database
- * @author Tabish Jabir, Ian Guenther Green
  * @brief store new information in the database
  */
 void Analytics::privateStoreRecord(std::string starttime, std::string endtime, std::string description, std::string type){
@@ -86,7 +84,6 @@ void Analytics::privateStoreRecord(std::string starttime, std::string endtime, s
 }
 /**
  * Query the database and return the results in the form of a 2-dimensional array
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve a structured query from the database
  * @param string consisting of a SQL query
  * @return 2-Dimensional Array of string representations of queried data
@@ -157,7 +154,6 @@ std::array<std::array<std::string,10>, 10> Analytics::privateRetrieveTable(std::
 
 /**
  * Reformat a string representation of a datetime from the format "DD-MM-YYYY HH:MM:SS" to "DD-MM-YYYY HH h MM m SS s"
- * @author Tabish Jabir, Ian Guenther Green
  * @brief Reformat a datetime string
  * @param string representation of a datetime value
  * @return reformatted string representation of a date and time
@@ -191,7 +187,6 @@ std::string DecomposeData(std::string dateTime) {
 }
 /**
  * Query the database and return the results in the form of a string
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve an unstructured query from the database
  * @param string consisting of a SQL query
  * @return string consisting of query results
@@ -233,7 +228,6 @@ std::string Analytics::privateRetrieveUnformattedTable(std::string query1) {
 
 /**
  * Query the database for a single value, and return the result in the form of a string
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve a single value from the database
  * @param string consisting of a SQL query for a single value
  * @return string consisting of query result
@@ -262,7 +256,6 @@ std::string Analytics::privateRetrieveSingle(std::string query1){
 
 /**
  * Public function to initalize the Analytics system by calling privateIntialize()
- * @author Tabish Jabir, Ian Guenther Green
  * @brief initalize the Analytics system
  */
 void Analytics::Initialize(){
@@ -271,7 +264,6 @@ void Analytics::Initialize(){
 
 /**
  * Public function to initalize the store new information in the database by calling privateStoreRecord()
- * @author Tabish Jabir, Ian Guenther Green
  * @brief store new information in the database
  */
 void Analytics::storeRecord(std::string starttime, std::string endtime, std::string description, std::string type){
@@ -280,7 +272,6 @@ void Analytics::storeRecord(std::string starttime, std::string endtime, std::str
 
 /**
  * Public function to retrieve a 2-D Aarray containing query results by calling privateRetrieveTable()
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve a structured query from the database
  * @param string consisting of a SQL query
  * @return 2-Dimensional Array of string representations of queried data
@@ -291,7 +282,6 @@ std::array<std::array<std::string,10>, 10> Analytics::RetrieveTable(std::string 
 
 /**
  * Public function to retrieve a string containing query results by calling privateRetrieveUnformattedTable()
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve an unstructured query from the database
  * @param string consisting of a SQL query
  * @return string consisting of query results
@@ -302,7 +292,6 @@ std::string Analytics::RetrieveUnformattedTable(std::string query1) {
 
 /**
  * Public function to retrieve a single value from a query by calling privateRetrieveSingle()
- * @author Tabish Jabir, Ian Guenther Green
  * @brief retrieve a single value from the database
  * @param string consisting of a SQL query for a single value
  * @return string consisting of query result

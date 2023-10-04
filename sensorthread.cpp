@@ -25,7 +25,6 @@ sensorThread::sensorThread(QObject *parent) : QThread(parent) {
 
 /**
  * function to run the thread for the loop to wait for sensor signal and send detection report by email.
- * @author Khanh Nguyen
  * @brief Get signal from the sensor.
  * @param none.
  * @return none.

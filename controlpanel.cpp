@@ -12,7 +12,6 @@ using namespace std;
 
 /**
  * Create control panel.
- * @author Khanh Nguyen
  * @brief Default constructor.
  */
 ControlPanel::ControlPanel(QWidget *parent)
@@ -46,7 +45,6 @@ ControlPanel::ControlPanel(QWidget *parent)
 }
 
 /**
- * @author Khanh Nguyen
  * @brief Default destructor.
  */
 ControlPanel::~ControlPanel()
@@ -56,7 +54,6 @@ ControlPanel::~ControlPanel()
 
 /**
  * Process when a number button is pressed and output the number pressed to the screen.
- * @author Khanh Nguyen
  * @brief Process when a button is pressed.
  * @param none.
  * @return output the number pressed to the screen.
@@ -79,7 +76,6 @@ void ControlPanel::NumPressed(){
 
 /**
  * Process when a non-number button (except for OK) is pressed and execute the function of each button.
- * @author Khanh Nguyen, Vicky Jiang
  * @brief Process when a button is pressed.
  * @param none.
  * @return execute the function of each button.
@@ -207,7 +203,6 @@ void ControlPanel::KeyPressed(){
 
 /**
  * Process when the OK button is pressed and execute the function of each button.
- * @author Khanh Nguyen, Vicky Jiang
  * @brief process when OK button is clicked to change passcode.
  * @param none.
  * @return change passcode if conditions are met.
